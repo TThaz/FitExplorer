@@ -1,11 +1,12 @@
 import './App.css'
-import PaginaCadastroUsuarios from './pages/PaginaCadastroUsuarios/PaginaCadastroUsuarios'
-
+import { Outlet } from "react-router-dom"
+import Header from './components/Header'
 function App() {
 
   return (
     <>
-      <PaginaCadastroUsuarios/>
+      <Header/>
+      <Outlet/>
     </>
   )
 }
