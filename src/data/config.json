@@ -1,0 +1,85 @@
+{
+    "exercicios": [
+        {
+            "nome-local": "beira-mar norte",
+            "nome-usuario": "joaquin-roberto",
+            "descricao": "local com belas paisagens e quadras de volei",
+            "localizacao": "florianopolis",
+            "cep":"input viaCEP",
+            "latitude": "-42.00000",
+            "longitude": "+39.00000",
+            "tipos-esporte": "volei"
+        },
+        {
+            "nome-local": "praia brava",
+            "nome-usuario": "carlos-augusto",
+            "descricao": "local com quadras poliesportivas",
+            "localizacao": "florianopolis",
+            "cep":"input viaCEP",
+            "latitude": "-34.00000",
+            "longitude": "+33.00000",
+            "tipos-esporte": "futebol"
+        },
+        {
+            "nome-local": "canasvieiras",
+            "nome-usuario": "francine-ribeiro",
+            "descricao": "local com diversas ferramentas para treino",
+            "localizacao": "florianopolis",
+            "cep":"input viaCEP",
+            "latitude": "-50.00000",
+            "longitude": "+93.00000",
+            "tipos-esporte": "musculacao"
+        }
+    ],
+
+    "usuarios": [{
+		"nome": "Sebastiana Carla Priscila Fogaça",
+		"cpf": "536.065.779-07",
+		"data_nasc": "09/04/1998",
+		"sexo": "Feminino",
+		"email": "sebastiana_carla_fogaca@gracomonline.com.br",
+		"senha": "teste123",
+		"cep": "78555-422",
+        "id": 1
+	},
+	{
+		"nome": "Carla Ayla de Paula",
+		"cpf": "247.602.874-69",
+		"data_nasc": "24/04/1982",
+		"sexo": "Feminino",
+		"email": "carla_depaula@lvnonline.com.be",
+		"senha": "teste123",
+		"cep": "32310-050",
+        "id": 2
+	},
+	{
+		"nome": "Benjamin Levi da Cruz",
+		"cpf": "889.185.346-12",
+		"data_nasc": "20/02/1986",
+		"sexo": "Masculino",
+		"email": "benjamin-dacruz90@ladder.com.br",
+		"senha": "80171bPDkB",
+        "cep": "76952-970",
+        "id": 3
+	},
+	{
+		"nome": "Natália Luzia da Rosa",
+		"cpf": "109.810.105-71",
+		"data_nasc": "25/03/1998",
+		"sexo": "Feminino",
+		"email": "natalia.luzia.darosa@infouai.com",
+		"senha": "QWUtNSN3GJ",
+		"cep": "57085-706",
+        "id": 4
+	},
+	{
+		"nome": "Benedito Severino Drumond",
+		"cpf": "350.072.664-00",
+		"data_nasc": "24/03/1996",
+		"sexo": "Masculino",
+		"email": "benedito_severino_drumond@locare-eventos.com.br",
+		"senha": "ygRimKaN4E",
+		"cep": "78058-402",
+        "id": 5
+	}
+    ]}
