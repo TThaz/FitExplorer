@@ -1,0 +1,26 @@
+.lista_cards{
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+}
+
+.card_container {
+    display: flex;
+    box-shadow: .2em .2em .8em black;
+    height: 15em;
+    width: 65em;
+    margin-top: 28px;
+}
+
+.card_imagem {
+    background-position: center;
+}
+
+.card_display {
+    padding: 1em;
+}
+
+.card_dados {
+    display: flex;
+    flex-direction: column;
+}
