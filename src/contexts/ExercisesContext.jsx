@@ -5,7 +5,7 @@ export const ExercisesContext = createContext();
 
 export const ExercisesContextProvider = ({children}) => {
     
-    const dados = useFetch("../data/config.json");
+    const dados = useFetch("/exercicios.json");
     const [locals, setLocals] = useState([]);
 
     useEffect(() => { 
@@ -14,12 +14,12 @@ export const ExercisesContextProvider = ({children}) => {
       }
     }, [dados])
 
-    function registerLocals(localData) {
+    function addLocals(localData) {
       setLocals(l => [...l, localData])
     }
 
     return (
-        <ExercisesContext.Provider value={{locals, setLocals, registerLocals}}>
+        <ExercisesContext.Provider value={{locals, setLocals, addLocals}}>
             {children}
         </ExercisesContext.Provider>
     )
