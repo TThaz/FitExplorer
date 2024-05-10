@@ -1,25 +1,49 @@
 import { createContext, useEffect, useState } from "react"
-import useFetch from "../hooks/useFetch.jsx"
 
 export const ExercisesContext = createContext();
 
 export const ExercisesContextProvider = ({children}) => {
     
-    const dados = useFetch("/exercicios.json");
-    const [locals, setLocals] = useState([]);
+    const [locais, setLocais] = useState([]);
 
     useEffect(() => { 
-      if(!!dados) {
-        setLocals(dados.locals);
-      }
-    }, [dados])
+      lerLocais()
+    }, [])
 
-    function addLocals(localData) {
-      setLocals(l => [...l, localData])
+    function lerLocais() {
+      fetch("http://localhost:3000/listaLocais")
+      .then(response => response.json())
+      .then(dados => setLocais(dados))
+      .catch(erro => console.log(erro))
     }
 
+    function cadastrarLocais(formValue) {
+      fetch("http://localhost:3000/listaLocais", {
+          method: "POST",
+          body: JSON.stringify(formValue),
+          headers: {
+              'Content-Type': 'application/json',
+          },
+      })
+      .then(() => {
+        alert("Deu certo")
+        lerLocais()
+        window.location.href = "/dashboard"
+        })
+      .catch(() => alert("Deu errado"))
+  }
+
+  function deletarLocais(id) {
+    fetch("http://localhost:3000/listaLocais/" + id, {
+        method: "DELETE"
+    })
+    .then(() => {alert("Deletou certo")
+                          lerLocais()})
+    .catch((error) => console.log(error))
+  }
+
     return (
-        <ExercisesContext.Provider value={{locals, setLocals, addLocals}}>
+        <ExercisesContext.Provider value={{locais, cadastrarLocais, deletarLocais}}>
             {children}
         </ExercisesContext.Provider>
     )

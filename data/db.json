@@ -1,85 +1,148 @@
 {
-    "exercicios": [
-        {
-            "nome-local": "beira-mar norte",
-            "nome-usuario": "joaquin-roberto",
-            "descricao": "local com belas paisagens e quadras de volei",
-            "localizacao": "florianopolis",
-            "cep":"input viaCEP",
-            "latitude": "-42.00000",
-            "longitude": "+39.00000",
-            "tipos-esporte": "volei"
-        },
-        {
-            "nome-local": "praia brava",
-            "nome-usuario": "carlos-augusto",
-            "descricao": "local com quadras poliesportivas",
-            "localizacao": "florianopolis",
-            "cep":"input viaCEP",
-            "latitude": "-34.00000",
-            "longitude": "+33.00000",
-            "tipos-esporte": "futebol"
-        },
-        {
-            "nome-local": "canasvieiras",
-            "nome-usuario": "francine-ribeiro",
-            "descricao": "local com diversas ferramentas para treino",
-            "localizacao": "florianopolis",
-            "cep":"input viaCEP",
-            "latitude": "-50.00000",
-            "longitude": "+93.00000",
-            "tipos-esporte": "musculacao"
-        }
-    ],
-
-    "usuarios": [{
-		"nome": "Sebastiana Carla Priscila Fogaça",
-		"cpf": "536.065.779-07",
-		"data_nasc": "09/04/1998",
-		"sexo": "Feminino",
-		"email": "sebastiana_carla_fogaca@gracomonline.com.br",
-		"senha": "teste123",
-		"cep": "78555-422",
-        "id": 1
-	},
-	{
-		"nome": "Carla Ayla de Paula",
-		"cpf": "247.602.874-69",
-		"data_nasc": "24/04/1982",
-		"sexo": "Feminino",
-		"email": "carla_depaula@lvnonline.com.be",
-		"senha": "teste123",
-		"cep": "32310-050",
-        "id": 2
-	},
-	{
-		"nome": "Benjamin Levi da Cruz",
-		"cpf": "889.185.346-12",
-		"data_nasc": "20/02/1986",
-		"sexo": "Masculino",
-		"email": "benjamin-dacruz90@ladder.com.br",
-		"senha": "80171bPDkB",
-        "cep": "76952-970",
-        "id": 3
-	},
-	{
-		"nome": "Natália Luzia da Rosa",
-		"cpf": "109.810.105-71",
-		"data_nasc": "25/03/1998",
-		"sexo": "Feminino",
-		"email": "natalia.luzia.darosa@infouai.com",
-		"senha": "QWUtNSN3GJ",
-		"cep": "57085-706",
-        "id": 4
-	},
-	{
-		"nome": "Benedito Severino Drumond",
-		"cpf": "350.072.664-00",
-		"data_nasc": "24/03/1996",
-		"sexo": "Masculino",
-		"email": "benedito_severino_drumond@locare-eventos.com.br",
-		"senha": "ygRimKaN4E",
-		"cep": "78058-402",
-        "id": 5
-	}
-    ]}
+  "listaLocais": [
+    {
+      "nomeLocal": "Beira Mar Norte",
+      "nomeUsuario": "BLevi",
+      "descricao": "Ciclovia para ciclistas",
+      "cep": "88025201",
+      "bairro": "Centro",
+      "logradouro": "Av. Beira-Mar",
+      "estado": "SC",
+      "cidade": "Florianopolis",
+      "numero": "4200000",
+      "latitude": "4200000",
+      "longitude": "3900000",
+      "esporte": "Aeróbica",
+      "userID": "1",
+      "id": 1
+    },
+    {
+      "nomeLocal": "Barra da Lagoa",
+      "nomeUsuario": "TTeste",
+      "descricao": "Belo local",
+      "cep": "94020470",
+      "bairro": "Castelo Branco",
+      "logradouro": "Rua Ciprestes",
+      "estado": "RS",
+      "cidade": "Gravataí",
+      "numero": "90",
+      "longitude": "6000000",
+      "latitude": "9000000",
+      "esporte": "Musculação",
+      "userID": "4",
+      "id": 4
+    },
+    {
+      "nomeLocal": "Praia do Tri Legal",
+      "nomeUsuario": "BDrumond",
+      "descricao": "Local com diversas ferramentas para treino",
+      "cep": "88054010",
+      "bairro": "Canasvieiras",
+      "logradouro": "Avenida das Nações",
+      "estado": "SC",
+      "cidade": "Florianópolis",
+      "numero": "0",
+      "longitude": "5000000",
+      "latitude": "9300000",
+      "esporte": "Corrida",
+      "userID": "3",
+      "id": 5
+    },
+    {
+      "nomeLocal": "PraiaBrava",
+      "nomeUsuario": "BDrumond",
+      "descricao": "Local com diversas ferramentas para treino",
+      "cep": "88034560",
+      "bairro": "Itacorubi",
+      "logradouro": "Rua Itaberá",
+      "estado": "SC",
+      "cidade": "Florianópolis",
+      "numero": "34",
+      "longitude": "1231312312312312",
+      "latitude": "1231231231231231",
+      "esporte": "Aeróbica",
+      "userID": "3",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "Benjamin Levi da Cruz",
+      "cpf": "889.185.346-12",
+      "dataNasc": "20/02/1986",
+      "sexo": "M",
+      "email": "benjamin-dacruz90@ladder.com.br",
+      "senha": "80171bPDkB",
+      "cep": "76952970",
+      "id": 1
+    },
+    {
+      "nome": "Natália Luzia da Rosa",
+      "cpf": "10981010571",
+      "dataNasc": "1998-03-25",
+      "sexo": "F",
+      "email": "natalia.luzia.darosa@infouai.com",
+      "senha": "QWUtNSN3GJ",
+      "cep": "57085706",
+      "id": 2
+    },
+    {
+      "nome": "Wayne Rooney",
+      "cpf": "12345678910",
+      "dataNasc": "0001-01-01",
+      "email": "bdrumond@email.com",
+      "sexo": "M",
+      "senha": "manchesterunited",
+      "cep": "12345678",
+      "id": 3
+    },
+    {
+      "nome": "Teste",
+      "cpf": "12345678910",
+      "dataNasc": "0001-01-01",
+      "sexo": "M",
+      "email": "teste@email.com",
+      "senha": "123456",
+      "cep": "12345678",
+      "id": 4
+    },
+    {
+      "nome": "Pedro Ernesto Denardin",
+      "cpf": "34437116003",
+      "dataNasc": "1950-02-06",
+      "sexo": "M",
+      "email": "pernesto@email.com",
+      "senha": "123456",
+      "cep": "90650970",
+      "id": 5
+    },
+    {
+      "nome": "Teste Administrador",
+      "sexo": "M",
+      "cep": "88032005",
+      "bairro": "Saco Grande",
+      "logradouro": "Rodovia José Carlos Daux",
+      "estado": "SC",
+      "cidade": "Florianópolis",
+      "numero": "3730",
+      "dataNasc": "2024-05-01",
+      "email": "teste@admin.com",
+      "senha": "123456",
+      "id": 6
+    },
+    {
+      "nome": "Ares Nero",
+      "sexo": "M",
+      "cep": "90650970",
+      "bairro": "Partenon",
+      "logradouro": "Avenida Bento Gonçalves",
+      "estado": "RS",
+      "cidade": "Porto Alegre",
+      "numero": "23",
+      "dataNasc": "2013-01-01",
+      "email": "taz@gmail.com",
+      "senha": "123456",
+      "id": 7
+    }
+  ]
+}

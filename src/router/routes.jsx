@@ -1,36 +1,45 @@
-import { createBrowserRouter } from "react-router-dom"
+import { Navigate, createBrowserRouter } from "react-router-dom"
 
 import App from "../App.jsx"
 import PaginaCadastroUsuarios from "../pages/PaginaCadastroUsuarios/PaginaCadastroUsuarios"
 import PaginaDashboard from "../pages/PaginaDashboard/PaginaDashboard"
 import PaginaCadastroLocais from "../pages/PaginaCadastroLocais/PaginaCadastroLocais"
 import PaginaLogin from "../pages/PaginaLogin/PaginaLogin"
-import ListaLocais from "../pages/ListaLocais/ListaLocais"
+import PaginaHome from "../pages/PaginaHome/PaginaHome.jsx"
 
+let isAutenticado = JSON.parse(localStorage.getItem("isAutenticado")) || false
+
+const PrivateRoute = ({children}) => {
+    return isAutenticado ? children : <Navigate to="/user-login" />
+}
 const routes = createBrowserRouter([
     {
+        path: "/user-login",
+        element: <PaginaLogin />
+    },
+    {
+        path: "/cadastro/usuarios",
+        element: <PaginaCadastroUsuarios />
+    },
+    {
         path: "/",
-        element: <App />,
+        element: (
+            <PrivateRoute>
+                <App />
+            </PrivateRoute>
+            ),
         children: [
+            {
+                path: "/home",
+                element: <PaginaHome />
+            },
             {
                 path: "/dashboard",
                 element: <PaginaDashboard />
             },
             {
-                path: "/cadastro-locais",
+                path: "/cadastro/locais/",
                 element: <PaginaCadastroLocais />
-            },
-            {
-                path: "/user-login",
-                element: <PaginaLogin />
-            },
-            {
-                path: "/user-register",
-                element: <PaginaCadastroUsuarios />
-            },
-            {
-                path: "/lista-locais",
-                element: <ListaLocais />
             }
         ]
     }
